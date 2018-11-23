@@ -270,7 +270,7 @@
 //     return item += item;
 // })
 //
-// var filter = arrNum.map(function (item, i) {
+// var filter = arrNum.filter(function (item, i) {
 //     // return item * 2;
 //     return item += item;
 // })
@@ -286,28 +286,134 @@
 
 
 
-function callMe (a, b, callback) {
+// function callMe (a, b, callback) {
+//
+//     if(typeof callback === 'function') {
+//         callback();
+//     } else {
+//         console.log(`Тут нет функции`);
+//     }
+//
+// }
+//
+// callMe('as', 'ss',  function () {
+//     console.log(`Тут есть функция`);
+// });
+//
+// // callMe('as', 'ss');
+//
+//
+//
+//
+// var arr = [2, 4, 8, 5, 3];
+// var i, j, k;
+// var n = arr.length;
+//
+//
+// console.log(`Исходный массив ${arr}`);
+// console.log(`Количество элементов в массиве ${n}`);
+//
+//
+// for (j = 0; j < n; j++) {
+//     for (i = 0; i < n - 1; i++) {
+//
+//         if (arr[i] > arr[i + 1]) {
+//             k = arr[i];
+//             arr[i] = arr[i + 1];
+//             arr[i + 1] = k;
+//         }
+//
+//     }
+// }
+// console.log(`Новый массив ${arr}`);
+//
+//
+//
 
-    if(typeof callback === 'function') {
-        callback();
-    } else {
-        console.log(`Тут нет функции`);
-    }
 
-}
-
-callMe('as', 'ss',  function () {
-    console.log(`Тут есть функция`);
-});
-
-// callMe('as', 'ss');
+// var array = [1, [2, [3, [4]], 5]];
+// var flattend = array.join(",").split(",");
+//
+//  var numArray = flattend.map(function(item){
+//      return +item;
+// })
+//
+// console.log(numArray);
+//
 
 
 
 
 var arr = [2, 4, 8, 5, 3];
+// var array = [1, [2, [3, [4]], 5]];
+
+// var flattend = array.join(",").split(",");
+
+
+
+// var eArray = eArray.concat(flattend)
+
+// var numArray = flattend.map(function(item){
+//     return +item;
+// for (var i = 0; i < arr.length; i++) {
+// // })
+//
+//     // n.join(",").split(",");
+//
+// }for (var i = 0; i < arr.length; i++) {
+// // })
+//
+//     // n.join(",").split(",");
+//
+// }
+// var n  = [];
+//
+// n.push(arr)
+// n.join(",")
+// alert( n);
+//
+//
+//
+
+//
+// var arr1 = [];
+// var arr2 = [3, 4, 5, 7];
+// arr1.push(...arr2);
+// console.log(arr1)
+//
+
+
+
+
+var arr = [1, 2, 3];
+
+var arr2 = [];
+for (var i = 0; i < arr.length; i++) {
+
+    arr2[i] = arr[i];
+}
+
+
+console.log(arr2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// sort array
+
+
+var arr = [2, 4, 8, 5, 3];
 var i, j, k;
-var n = 6;
+var n = arr.length;
 
 
 console.log(`Исходный массив ${arr}`);
@@ -324,14 +430,26 @@ for (j = 0; j < n; j++) {
         }
 
     }
-    console.log(`Новый массив ${arr}`);
+
 }
 
 
+console.log(`Новый массив ${arr}`);
 
 
 
 
+
+// flattend array
+
+var array = [1, [2, [3, [4]], 5]];
+var flattend = array.join(",").split(",");
+
+var numArray = flattend.map(function(item){
+    return +item;
+})
+
+console.log(numArray);
 
 
 
